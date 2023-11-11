@@ -1,0 +1,251 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import "compass/css3";
+
+body{
+    background: #A9A9A9;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(6,1fr) ;
+  grid-auto-rows: 1fr;
+  grid-gap: 3vw;
+  padding: 40px;
+  width: calc(100% - 13%);
+  width: -webkit-calc(100% - 13%);
+  width: -moz-calc(100% - 13%);
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+/* 字的區塊+變透明der */
+.textfield {    
+    position: relative;
+    text-align: center;     
+    cursor: pointer;
+}
+.textfield figcaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.8s ease-out;
+    transition-delay: 0.2s;
+  opacity: 0;
+  text-align: center;
+  color: black;
+  font-size: 18px;
+  cursor: pointer; 
+}
+
+.textfield:hover figcaption {
+    transform: all 0.8s ease-out;
+    opacity: 1;
+}
+
+/* 框框+經過變透明der */
+.photoframe {
+  background-position: center center;
+  background-size: cover;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  place-items: center;
+  cursor: pointer;
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.photoframe::after {
+  content: "";
+  display: inline-block;
+  padding-bottom: 100%;
+}
+.textfield:hover .photoframe{
+  opacity: 0.3;
+}
+
+/* 區塊大小 */
+.large{
+  grid-column-end: span 4;
+  grid-row-end: span 4; 
+}
+.medium{
+  grid-column-end: span 3;
+  grid-row-end: span 3; 
+}
+.small{
+  grid-column-end: span 2;
+  grid-row-end: span 2; 
+}
+
+h1 {
+    color: #333; /* Set text color */
+    text-align: center; /* Center the text */
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 2px; /* Add letter spacing */
+    margin-bottom: 20px; /* Add some bottom margin for spacing */
+}
+
+/*herree */
+
+
+#searchBar {
+    display: flex;
+/*    margin-top:  px;*/
+/*    margin-bottom: 20px;*/
+    width: 100%; /* Set the width of the inner div to 100% of the outer div */
+    height: 100%; /* Set the height of the inner div to 100% of the outer div */
+    background-color: lightblue; /* Optional: Add a background color for visualization */
+    position: absolute; /* Position the inner div absolutely within the outer div */
+    top: 0; /* Align the top of the inner div with the top of the outer div */
+    margin-right: 10 px;
+}
+
+#panel1 {
+    padding: 8px;
+    flex-grow: 1;
+    font-size: 50 px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+/*    margin-right: 16px;*/
+}
+#panel2 {
+    padding: 8px;
+    flex-grow: 1;
+    font-size: 50 px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+/*    margin-right: 16px;*/
+}
+
+#panel3 {
+    padding: 8px;
+    flex-grow: 1;
+    font-size: 50 px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+/*    margin-right: 16px;*/
+}
+
+#panel4 {
+    padding: 8px;
+    flex-grow: 1;
+    font-size: 50 px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+/*    margin-right: 16px;*/
+}
+
+#panel5 {
+    padding: 8px;
+    flex-grow: 1;
+    font-size: 50 px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+/*    margin-right: 16px;*/
+}
+
+#panel6 {
+    padding: 8px;
+    flex-grow: 1;
+    font-size: 50 px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+/*    margin-right: 16px;*/
+}
+#panel7 {
+    padding: 8px;
+    flex-grow: 1;
+    font-size: 50 px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+/*    margin-right: 16px;*/
+}
+#panel8 {
+    padding: 8px;
+    flex-grow: 1;
+    font-size: 50 px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+/*    margin-right: 16px;*/
+}
+#panel9 {
+    padding: 8px;
+    flex-grow: 1;
+    font-size: 50 px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+/*    margin-right: 16px;*/
+}
+#panel10 {
+    padding: 8px;
+    flex-grow: 1;
+    font-size: 50 px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+/*    margin-right: 16px;*/
+}
+
+#largeInput {
+    font-size: 18px; /* Set the desired font size for the input element */
+}
+#searchButton {
+/*    padding: 8px 8px;*/
+    background-color: #ADD8E6; /* Green color for the button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+/* Add hover effect to the search button */
+#searchButton:hover {
+    background-color: DodgerBlue; /* Darker green color on hover */
+}
